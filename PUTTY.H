@@ -749,6 +749,7 @@ void cleanup_exit(int);
     X(INT, NONE, erase_to_scrollback) \
     X(INT, NONE, compose_key) \
     X(INT, NONE, ctrlaltkeys) \
+    X(INT, NONE, altgrkey) \
     X(STR, NONE, wintitle) /* initial window title */ \
     /* Terminal options */ \
     X(INT, NONE, savelines) \

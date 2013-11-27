@@ -109,7 +109,9 @@ void win_setup_config_box(struct controlbox *b, HWND *hwndp, int has_help,
     ctrl_checkbox(s, "Control-Alt is different from AltGr", 'd',
 		  HELPCTX(keyboard_ctrlalt),
 		  conf_checkbox_handler, I(CONF_ctrlaltkeys));
-
+    ctrl_checkbox(s, "Enable AltGr key", 0,
+		  HELPCTX(no_help),
+		  conf_checkbox_handler, I(CONF_altgrkey));
     /*
      * Windows allows an arbitrary .WAV to be played as a bell, and
      * also the use of the PC speaker. For this we must search the
